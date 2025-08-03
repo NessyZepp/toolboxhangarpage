@@ -3,41 +3,67 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout>
-	<div class="bg-[#0E0E1F] min-h-screen flex items-center justify-center">
-		<div class="bg-[#f0f0f0] flex flex-col lg:rounded-3xl overflow-hidden lg:max-w-1/3 lg:w-full justify-center">
-			<div class="bg-gradient-to-r p-8 flex-col from-[#8345EE] to-[#A584F8] w-full flex items-center justify-center">
-				<img class="rounded-full border-4 border-[#2b6eff]" src="/discord.webp">
+	<div class="bg-[#0E0E1F] min-h-screen flex items-center justify-center p-4">
+		<div class="bg-[#f0f0f0] flex flex-col lg:rounded-3xl overflow-hidden max-w-2xl w-full">
+			<!-- Header Section -->
+			<div class="bg-gradient-to-r from-[#8345EE] to-[#A584F8] p-8 flex flex-col items-center justify-center text-center">
+				<img class="w-24 h-24 rounded-full border-4 border-[#2b6eff] mb-4" src="/discord.webp" alt="Zepp Thunderbolt Avatar">
 				<h1 class="text-3xl font-semibold text-white">Zepp Thunderbolt's Toolbox</h1>
 			</div>
 
-			<div class="m-4 ">
-			<div class="p-4 font-semibold text-3xl">
-				<h1>About me</h1>
-			</div>
-			<div class="p-4">
-			<p>Heya! I'm Zepp Thunderbolt and this is my little landing page for my website design & dev venture. 
-				I started this to learn a new skill & provide the best of my work to clients. I specialize mainly in static sites. 
-				Prices for sites are based off an estimate that depends on your budget, the complexity of the page you want done and how long it'll take me.
-				
-			</p>
-			</div>
-			<div class="text-center p-4 text-3xl text-semibold">
-			<h1>Contact me & links</h1>
-			</div>
-			<div class="p-2 mb-8 text-center lg:grid lg:grid-cols-3 space-y-6">
-				<div>
-					<h1 class="text-3xl font-semibold lg:mb-8 mb-6">Discord</h1>
-					<a class="pointer-events-none p-4 h-24 bg-[#515CCE] text-white text-2xl rounded-[15px]" href=""> planetits </a>
+			<!-- Content Section -->
+			<div class="p-6">
+				<!-- About Section -->
+				<div class="mb-8">
+					<h2 class="text-3xl font-semibold mb-4">About me</h2>
+					<p class="text-gray-700 leading-relaxed">
+						Heya! I'm Zepp Thunderbolt and this is my little landing page for my website design & dev venture. 
+						I started this to learn a new skill & provide the best of my work to clients. I specialize mainly in static sites. 
+						Prices for sites are based off an estimate that depends on your budget, the complexity of the page you want done and how long it'll take me.
+					</p>
 				</div>
-				<div>
-					<h1 class="text-3xl font-semibold lg:mb-8 mb-6">Twitter</h1>
-					<a class="p-4 h-24 bg-black text-2xl text-white rounded-[15px]" href="https://x.com/ZeppNtheGals" target="_blank"> My Page  </a>
+
+				<!-- Contact Section -->
+				<div class="text-center">
+					<h2 class="text-3xl font-semibold mb-8">Contact me & links</h2>
+					
+					<!-- Links Grid -->
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+						<!-- Discord -->
+						<div class="flex flex-col items-center">
+							<h3 class="text-xl font-semibold mb-4">Discord</h3>
+							<button class="w-full max-w-[200px] px-6 py-4 bg-[#515CCE] text-white text-lg font-medium rounded-2xl cursor-not-allowed opacity-75">
+								planetits
+							</button>
+						</div>
+						
+						<!-- Twitter -->
+						<div class="flex flex-col items-center">
+							<h3 class="text-xl font-semibold mb-4">Twitter</h3>
+							<a 
+								class="w-full max-w-[200px] px-6 py-4 bg-black text-white text-lg font-medium rounded-2xl hover:bg-gray-800 transition-colors duration-200 flex items-center justify-center" 
+								href="https://x.com/ZeppNtheGals" 
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								My Page
+							</a>
+						</div>
+						
+						<!-- Ko-Fi -->
+						<div class="flex flex-col items-center">
+							<h3 class="text-xl font-semibold mb-4">Ko-Fi</h3>
+							<a 
+								class="w-full max-w-[200px] px-6 py-4 bg-[#477CEB] text-white text-lg font-medium rounded-2xl hover:bg-[#3d6bc7] transition-colors duration-200 flex items-center justify-center" 
+								href="https://ko-fi.com/zeppington" 
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								My Page
+							</a>
+						</div>
+					</div>
 				</div>
-				<div>
-					<h1 class="text-3xl font-semibold lg:mb-8 mb-6">Ko-Fi</h1>
-					<a class="p-4 h-24 bg-[#477CEB] text-white text-2xl rounded-[15px]" href="https://ko-fi.com/zeppington" target="_blank"> My Page</a>
-				</div>
-			</div>
 			</div>
 		</div>
 	</div>
