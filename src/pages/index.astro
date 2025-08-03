@@ -1,16 +1,44 @@
 ---
-
+import Layout from '../layouts/Layout.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+	<div class="bg-[#0E0E1F] min-h-screen flex items-center justify-center">
+		<div class="bg-[#f0f0f0] flex flex-col rounded-3xl overflow-hidden max-w-1/3 w-full justify-center">
+			<div class="bg-gradient-to-r p-8 flex-col from-[#8345EE] to-[#A584F8] w-full flex items-center justify-center">
+				<img class="rounded-full border-4 border-[#2b6eff]" src="/discord.webp">
+				<h1 class="text-3xl font-semibold text-white">Zepp Thunderbolt's Toolbox</h1>
+			</div>
+
+			<div class="m-4 ">
+			<div class="p-4 font-semibold text-3xl">
+				<h1>About me</h1>
+			</div>
+			<div class="p-4">
+			<p>Heya! I'm Zepp Thunderbolt and this is my little portfolio page for my website design & dev venture. 
+				I started this to learn a new skill & provide the best of my work to clients. I specialize mainly in static sites. 
+				Prices for sites are based off an estimate that depends on your budget, the complexity of the page you want done and how long it'll take me.
+				
+			</p>
+			</div>
+			<div class="text-center p-4 text-3xl text-semibold">
+			<h1>Contact me & links</h1>
+			</div>
+			<div class="p-2 mb-8 text-center grid grid-cols-3">
+				<div>
+					<h1 class="text-3xl font-semibold mb-8">Discord</h1>
+					<a class="pointer-events-none p-4 h-24 bg-[#515CCE] text-white text-2xl rounded-[15px]" href=""> planetits </a>
+				</div>
+				<div>
+					<h1 class="text-3xl font-semibold mb-8">Twitter</h1>
+					<a class="p-4 h-24 bg-black text-2xl text-white rounded-[15px]" href="https://x.com/ZeppNtheGals" target="_blank"> My Profile </a>
+				</div>
+				<div>
+					<h1 class="text-3xl font-semibold mb-8">Ko-Fi</h1>
+					<a class="p-4 h-24 bg-[#477CEB] text-white text-2xl rounded-[15px]" href="https://x.com/ZeppNtheGals" target="_blank"> My Page</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</Layout>
