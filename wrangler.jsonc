@@ -1,0 +1,9 @@
+{
+  "name": "toolboxhangar",
+  "main": "dist/index.html",
+  "compatibility_date": "2025-08-03",
+  "route": {
+    "pattern": "toolbox.hangarpage.com/*",
+    "zone_name": "hangarpage.com"
+  }
+}
