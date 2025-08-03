@@ -1,9 +1,5 @@
 {
   "name": "toolboxhangar",
   "compatibility_date": "2025-08-03",
-  "pages_build_output_dir":"dist",
-  "route": {
-    "pattern": "toolbox.hangarpage.com/*",
-    "zone_name": "hangarpage.com"
-  }
+  "pages_build_output_dir":"dist"
 }
